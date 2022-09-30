@@ -143,16 +143,11 @@ body {
     color: var(--accent-color);
 }
 
-.header-phone-number {
-    color: var(--desc-text-color);
-}
-
-.header-phone-number:hover,
-.header-phone-number:focus {
-    color: var(--accent-color);
-}
-
-.header-email{
+/* email */
+.header-email {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
     color: var(--desc-text-color);
     margin-right: 50px;
 }
@@ -162,14 +157,59 @@ body {
     color: var(--accent-color);
 }
 
+.email-icon {
+    fill: var(--desc-text-color);
+}
+
+.header-email:hover .email-icon,
+.header-email:focus .email-icon{
+    fill:var(--accent-color);
+}
+
+/* tel */
+.header-phone-number {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--desc-text-color);
+}
+
+.header-phone-number:hover,
+.header-phone-number:focus {
+    color: var(--accent-color);
+}
+
+.tel-icon{
+    fill: var(--desc-text-color);
+}
+
+.header-phone-number:hover .tel-icon,
+.header-phone-number:focus .tel-icon{
+    fill: var(--accent-color);
+}
+
+
+
 /* ==================== /HEADER ==================== */
 
 /* ==================== HERO ==================== */
 .hero{
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: #2F303A;
+
+
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url("../images/hero/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
 
 .hero-container{
     padding: 200px 0;
